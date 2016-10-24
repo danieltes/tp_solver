@@ -62,6 +62,8 @@ class Scanner:
                         current_token_type = constants.TOKEN_X
                     elif char_value == "y":
                         current_token_type = constants.TOKEN_Y
+                    elif char_value == "^":
+                        current_token_type = constants.TOKEN_POWER
                     elif char_value == constants.EOF:
                         save_char = False
                         state_type = constants.STATE_DONE

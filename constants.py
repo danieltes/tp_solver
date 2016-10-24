@@ -20,6 +20,7 @@ TOKEN_X = 9
 TOKEN_Y = 10
 TOKEN_ERROR = 11
 TOKEN_EOF = 12
+TOKEN_POWER = 13
 
 # Estado en el que se encuentra la construccion del token.
 STATE_START = 0
