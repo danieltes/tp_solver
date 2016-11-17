@@ -8,9 +8,9 @@ def draw():
 
     for x in range(-1000, 1000):
         try:
-            y_points.append(compiled.exp(x))
+            y_points.append(compiled.compiled_func(x))
             x_points.append(x)
         except:
-            print("Error, posible discontinuidad")
+            print("Error, posible discontinuidad en: ", x)
     plt.scatter(x_points, y_points)
     plt.show()

@@ -1,1 +1,4 @@
-exp = lambda x: (x)/((x)**(2))
+
+def compiled_func(x):
+    y = (1)/(x)
+    return y

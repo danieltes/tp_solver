@@ -11,4 +11,6 @@ def _write_term(n):
 
 def gen(tree):
     with open("compiled.py", "w") as fd:
-        fd.write("exp = lambda x: {}".format(_write_term(tree)))
+        fd.write("\ndef compiled_func(x):\n") 
+        fd.write("    y = {}\n".format(_write_term(tree)))
+        fd.write("    return y\n")
