@@ -77,7 +77,7 @@ class Scanner:
                     state_type = constants.STATE_DONE
                     current_token_type = constants.TOKEN_NUMBER
             else:
-                print "Error en el escaner. No deberia haber llegado hasta aca :("
+                print("Error en el escaner. No deberia haber llegado hasta aca :(")
                 state_type = constants.STATE_DONE
                 current_token_type = constants.TOKEN_ERROR
 
